@@ -1,0 +1,23 @@
+{
+	"name": "Google UK Search",
+	"description": "Add google.co.uk to your search engines (including search suggestions from google.co.uk).",
+	"version": "0.1",
+	"manifest_version": 2,
+	"applications":{
+		"gecko": {
+			"id": "google-uk-search@jeffersonscher.com",
+			"strict_min_version": "64.0"
+		}
+	},
+	"developer": {
+		"name": "Jefferson \"jscher2000\" Scher",
+		"url": "https://github.com/jscher2000/"
+	},
+	"chrome_settings_overrides": {
+		"search_provider": {
+			"name": "Google UK",
+			"search_url": "https://www.google.co.uk/search?q={searchTerms}",
+			"suggest_url": "https://www.google.co.uk/complete/search?client=firefox&hl=en-GB&q={searchTerms}"
+		}
+	}
+}
