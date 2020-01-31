@@ -1,7 +1,7 @@
 {
 	"name": "Google UK Search",
 	"description": "Add google.co.uk to your search engines (including search suggestions from google.co.uk).",
-	"version": "0.1",
+	"version": "0.2",
 	"manifest_version": 2,
 	"applications":{
 		"gecko": {
@@ -13,7 +13,13 @@
 		"name": "Jefferson \"jscher2000\" Scher",
 		"url": "https://github.com/jscher2000/"
 	},
-	"chrome_settings_overrides": {
+	"icons": {
+		"32": "favicon.png"
+	},
+	"web_accessible_resources": [
+		"favicon.png"
+	],
+  "chrome_settings_overrides": {
 		"search_provider": {
 			"name": "Google UK",
 			"search_url": "https://www.google.co.uk/search?q={searchTerms}",
